@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="addAnimalPane" prefHeight="270.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pavel.controllers.AddAnimalController">
+   <children>
+      <TextField fx:id="typeField" layoutX="52.0" layoutY="93.0" prefHeight="25.0" prefWidth="189.0" />
+      <TextField fx:id="nicknameField" layoutX="277.0" layoutY="93.0" prefHeight="25.0" prefWidth="189.0" />
+      <Label layoutX="52.0" layoutY="43.0" prefHeight="37.0" prefWidth="102.0" text="Enter type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="43.0" prefHeight="37.0" prefWidth="181.0" text="Enter nickname">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="394.0" layoutY="170.0" mnemonicParsing="false" onAction="#confirm" prefHeight="44.0" prefWidth="88.0" text="Confirm" />
+      <Button layoutX="263.0" layoutY="170.0" mnemonicParsing="false" onAction="#closeAddAnimalStage" prefHeight="44.0" prefWidth="88.0" text="Back" />
+      <TextField fx:id="colorField" layoutX="503.0" layoutY="93.0" prefHeight="25.0" prefWidth="189.0" />
+      <Label layoutX="503.0" layoutY="43.0" prefHeight="37.0" prefWidth="181.0" text="Enter color">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nullFieldsLabel" alignment="CENTER" layoutX="172.0" layoutY="126.0" prefHeight="37.0" prefWidth="399.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

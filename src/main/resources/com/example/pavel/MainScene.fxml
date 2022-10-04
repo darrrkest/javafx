@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pavel.controllers.MainController">
+   <children>
+      <Button fx:id="logout" layoutX="433.0" layoutY="120.0" mnemonicParsing="false" onAction="#switchToWelcomeScene" prefHeight="25.0" prefWidth="100.0" text="Logout" />
+      <TableView fx:id="TableView" accessibleText="NO" layoutX="75.0" layoutY="92.0" prefHeight="206.0" prefWidth="257.0">
+        <columns>
+          <TableColumn fx:id="typeColumn" prefWidth="72.0" text="Type" />
+          <TableColumn fx:id="nicknameColumn" minWidth="0.0" prefWidth="113.0" text="Nickname" />
+            <TableColumn fx:id="colorColumn" minWidth="0.0" prefWidth="70.0" text="Color" />
+        </columns>
+      </TableView>
+      <Label fx:id="personAnimalLabel" alignment="CENTER" layoutX="66.0" layoutY="23.0" prefHeight="33.0" prefWidth="467.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="addAnimalButton" layoutX="433.0" layoutY="157.0" mnemonicParsing="false" onAction="#switchAddAnimalStage" prefHeight="25.0" prefWidth="100.0" text="Add animal" />
+      <Button fx:id="refreshButton" layoutX="433.0" layoutY="195.0" mnemonicParsing="false" onAction="#refresh" prefHeight="25.0" prefWidth="100.0" text="Refresh" />
+      <Button fx:id="deleteAnimalButton" layoutX="433.0" layoutY="232.0" mnemonicParsing="false" onAction="#deleteAnimal" prefHeight="25.0" prefWidth="100.0" text="Delete" />
+      <Button fx:id="editAnimalButton" layoutX="433.0" layoutY="267.0" mnemonicParsing="false" onAction="#switchEditAnimalStage" prefHeight="25.0" prefWidth="100.0" text="Edit" />
+   </children>
+</AnchorPane>
